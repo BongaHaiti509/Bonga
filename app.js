@@ -1,5 +1,5 @@
 // 1) Créez un projet Supabase, puis collez ici l'URL et la clé Publishable.
-const SUPABASE_URL = "COLLEZ_ICI_URL_SUPABASE";
+const SUPABASE_URL = "https://gvoxrxdfizlhpayfmqzm.supabase.co";
 const SUPABASE_ANON_KEY = "COLLEZ_ICI_CLE_PUBLISHABLE";
 const configured = !SUPABASE_URL.startsWith("COLLEZ_") && !SUPABASE_ANON_KEY.startsWith("COLLEZ_");
 const db = configured && window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
