@@ -1,7 +1,7 @@
 const $ = (s) => document.querySelector(s);
 const menu = $("#menuToggle"), nav = $("#mainNav");
 const SUPABASE_URL = "https://gvoxrxdfizlhpayfmqzm.supabase.co";
-const SUPABASE_KEY = "METE_PUBLISHABLE_KEY_OU_ISIT";
+const SUPABASE_KEY = "sb_publishable_MDnRgJvyKAnMSgnEDaPjyQ_SQQWuLiX";
 menu?.addEventListener("click", () => nav.classList.toggle("show"));
 nav?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("show")));
 $("#year").textContent = new Date().getFullYear();
