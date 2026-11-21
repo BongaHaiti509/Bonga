@@ -4,7 +4,7 @@ const SUPABASE_URL = "https://gvoxrxdfizlhpayfmqzm.supabase.co";
 const SUPABASE_KEY = "sb_publishable_MDnRgJvyKAnMSgnEDaPjyQ_SQQWuLiX";
 menu?.addEventListener("click", () => nav.classList.toggle("show"));
 nav?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("show")));
-$("#year").textContent = new Date().getFullYear();
+if ($("#year")) $("#year").textContent = new Date().getFullYear();
 const modal = $("#loginModal");
 function openModal(){ modal.classList.add("open"); modal.setAttribute("aria-hidden","false"); }
 function closeModal(){ modal.classList.remove("open"); modal.setAttribute("aria-hidden","true"); }
