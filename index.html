@@ -40,6 +40,38 @@
 <section class="closing"><span class="closing-flower">✿</span><div class="section-kicker">ANN BATI YON LAVNI ANSANM</div><h2>Une voix peut ouvrir<br><em>un nouvel horizon.</em></h2><a href="#discussions" class="btn btn-red">Prendre part au dialogue ↗</a></section>
 </main>
 <footer><a class="brand footer-brand" href="#accueil"><span class="brand-mark">✿</span><span>HAÏTI <b>LA FLEUR NOIR</b><small>LA VOIX DES CITOYENS</small></span></a><p>Un espace citoyen de débat et de participation.</p><div>© <span id="year"></span> HAÏTI LA FLEUR NOIR · Tous droits réservés</div></footer>
-<div class="modal" id="loginModal" aria-hidden="true"><div class="modal-backdrop" id="modalClose"></div><div class="modal-box"><button class="modal-x" id="modalX" aria-label="Fermer">×</button><div class="brand-mark">✿</div><div class="section-kicker">ESPACE CITOYEN</div><h2>Bienvenue.</h2><p>La connexion des membres sera activée avec votre projet Supabase.</p><label for="email">Adresse courriel</label><input id="email" type="email" placeholder="vous@exemple.com"><button class="btn btn-red full" id="loginInfo">Continuer</button><small id="loginMessage">La connexion n'est pas encore configurée.</small></div></div>
-<script src="app.js"></script>
+-box"><button class="modal-x" id="modalX" aria-label="Fermer">×</button><div class="brand-mark">✿</div><div class="section-kicker">ESPACE CITOYEN</div><h2>Bienvenue.</h2><p>La connexion des membres sera activée avec votre projet Supabase.</p><label for="email">Adresse courriel</label><input id="email" type="email" placeholder="vous@exemple.com"><button class="btn btn-red full" id="loginInfo">Continuer</button><small id="loginMessage">La connexion n'est pas encore configurée.</small></div></div>
+<div class="modal" id="loginModal" aria-hidden="true">
+  <div class="modal-backdrop" id="modalClose"></div>
+  <div class="modal-box">
+    <button class="modal-x" id="modalX" aria-label="Fermer">×</button>
+    <div class="brand-mark">✿</div>
+    <div class="section-kicker">ESPACE CITOYEN</div>
+    <h2 id="authTitle">Créer un compte</h2>
+
+    <form id="signupForm">
+      <label>Nom complet</label>
+      <input id="fullName" type="text" placeholder="Votre nom" required>
+      <label>Adresse courriel</label>
+      <input id="signupEmail" type="email" placeholder="vous@exemple.com" required>
+      <label>Mot de passe</label>
+      <input id="signupPassword" type="password" minlength="6" required>
+      <label>Confirmer le mot de passe</label>
+      <input id="confirmPassword" type="password" minlength="6" required>
+      <button class="btn btn-red full" type="submit">Créer mon compte</button>
+    </form>
+
+    <form id="signinForm" hidden>
+      <label>Adresse courriel</label>
+      <input id="signinEmail" type="email" required>
+      <label>Mot de passe</label>
+      <input id="signinPassword" type="password" required>
+      <button class="btn btn-red full" type="submit">Se connecter</button>
+    </form>
+
+    <p id="authMessage">Inscrivez-vous pour participer.</p>
+    <button type="button" id="switchAuth">J'ai déjà un compte</button>
+  </div>
+</div>
+  <script src="app.js"></script>
 </body></html>
