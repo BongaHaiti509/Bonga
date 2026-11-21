@@ -10,4 +10,4 @@ $("#loginOpen")?.addEventListener("click",openModal);
 $("#modalClose")?.addEventListener("click",closeModal);
 $("#modalX")?.addEventListener("click",closeModal);
 $("#loginInfo")?.addEventListener("click",()=>{$("#loginMessage").textContent="La connexion sécurisée sera activée après la configuration Supabase.";});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();}sb_publishable_MDnRgJvyKAnMSgnEDaPjyQ_SQQWuLiX);
