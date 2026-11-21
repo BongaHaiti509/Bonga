@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discussions | HAÏTI LA FLEUR NOIR</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.discussions-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  color: white;
+}
+.discussion-card {
+  background: #171717;
+  border: 1px solid #b58a35;
+  border-radius: 14px;
+  padding: 22px;
+  margin: 20px 0;
+}
+.discussion-card h2 { color: #e3bd65; }
+.back-link { color: #e3bd65; }
+</style>
+</head>
+<body>
+<header class="discussions-page">
+<a class="back-link" href="index.html">← Accueil</a>
+<h1>ESPACE DE DISCUSSION</h1>
+<p>Un espace pour échanger des idées sur l'avenir d'Haïti.</p>
+</header>
+<main class="discussions-page">
+<div class="discussion-card">
+<h2>Bienvenue dans les discussions</h2>
+<p>Exprimez vos idées, partagez vos opinions et débattez dans le respect.</p>
+<p>Les discussions des citoyens seront bientôt disponibles.</p>
+</div>
+</main>
+</body>
+</html>
